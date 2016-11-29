@@ -1,0 +1,5 @@
+第一步，写一个Activity的控制类，定义currentActivity代表当前Activity
+第二步，写一个BaseActivity让所有Activity都继承它，在onCreate()中设置currentActivity
+第三步，自定义一个广播接收器，在里面弹出一个对话框，利用currentActivity作为context
+第四步，在AndroidManifest.xml中注册广播
+5,在需要的地方发送广播
